@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" /> 
+    <!-- Permite usar caracteres especiales como ñ o tildes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Hace que la página se adapte bien a móviles -->
+    <title>Eneba Clone - Ofertas Épicas en Juegos</title>
+  </head>
+
+  <body>
+    <!-- Encabezado de la página -->
+    <header>
+      <!-- Parte superior de la web -->
+      <a href="index.html" class="logo">ENEBA CLONE</a>
+
+      <!-- Barra de busqueda -->
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar juegos ..." />
+        <button type="button">Buscar</button>
+      </div>
+
+      <!-- Menú de navegación -->
+      <nav class="nav-links">
+        <a href="store.html">Tienda</a>
+        <a href="#">Login</a>
+        <a href="#" class="cart-icon">🛒
+          <span class="cart-count">0</span>
+        </a>
+      </nav>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main>
+      <section class="hero">
+        <h1 class="hero-title">¡Bienvenido a Eneba Clone!</h1>
+        <p class="hero-subtitle">
+          Descubre ofertas épicas en juegos de PC, PlayStation, Xbox y Nintendo.
+          ¡Tu próxima aventura gamer te espera aquí!
+        </p>
+        <a href="store.html" class="btn-primary">Explorar Tienda →</a>
+      </section>
+
+      <!-- Sección de categorías de juegos -->
+      <section class="categories">
+        <h2 class="page-title">Categorías Populares</h2>
+        <div class="categories-grid">
+
+          <!-- Categoría de juegos de PC -->
+          <article
+            class="category-card"
+            onclick="window.location.href = 'store.html?platform=PC'"
+          >
+            <h3>⚫ PC Games</h3>
+
+            <!-- Categoría de juegos de PlayStation -->
+          </article>
+          <article
+            class="category-card"
+            onclick="window.location.href = 'store.html?platform=PS'"
+          >
+            <h3>🔵 PlayStation</h3>
+
+            <!-- Categoría de juegos de Xbox -->
+          </article>
+          <article
+            class="category-card"
+            onclick="window.location.href = 'store.html?platform=Xbox'"
+          >
+            <h3>🟢 Xbox</h3>
+
+            <!-- Categoría de juegos de Nintendo -->
+          </article>
+          <article
+            class="category-card"
+            onclick="window.location.href = 'store.html?platform=Nintendo'"
+          >
+            <h3>🔴 Nintendo</h3>
+        </div>
+      </section>
+
+      <!-- Sección de ofertas destacadas -->
+      <h2 class="page-title">Ofertas Destacadas</h2>
+      <div class="products-grid" id="featured-products">
+        
+        <!-- Producto destacado -->
+        <article class="product-card">
+          <span class="discount-badge">-20%</span>
+          <span class="platform-badge">PC</span>
+          <img
+            src="https://placehold.co/400x500/1a1a1a/ffffff?text=Game 1"
+            alt="Game Name"
+            class="product-image"
+          />
+          <!-- Información del producto -->
+          <div class="product-info">
+            <h3 class="product-title">Juego de Ejemplo</h3>
+            <div class="product-price-container">
+              <span class="price-original">59.99€</span>
+              <span class="price-final">47.99€</span>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Otro producto destacado -->
+        <article class="product-card">
+          <span class="platform-badge">PS5</span>
+          <img
+            src="https://placehold.co/400x500/1a1a1a/ffffff?text=Game 2"
+            alt="Game Name"
+            class="product-image"
+          />
+          <!-- Información del producto -->
+          <div class="product-info">
+            <h3 class="product-title">Otro Juego (Mockup)</h3>
+            <div class="product-price-container">
+              <span class="price-final">69.99€</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+      <p>&copy; 2026 Eneba Clone MVP. Proyecto Educativo.</p>
+      <p>
+        Hecho con ❤️ por Coraima Mera Rodriguez. Inspirado en la plataforma
+        original de Eneba.
+      </p>
+    </footer>
+  </body>
+</html>
